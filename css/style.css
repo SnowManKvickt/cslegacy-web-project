@@ -1,0 +1,422 @@
+/* CS:Legacy Website - Custom Styling */
+
+:root {
+    --primary-color: #ff4d00;
+    --secondary-color: #1e2124;
+    --tertiary-color: #333;
+    --accent-color: #ffb700;
+    --dark-bg: #121212;
+    --light-text: #f5f5f5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 65vh;
+    min-height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-content .logo {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 992px) {
+    .hero-content .logo {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero-content .logo {
+        max-width: 600px;
+    }
+}
+
+.call-to-arms h2 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(255, 183, 0, 0.7);
+}
+
+/* Navigation */
+.navbar {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Section Styling */
+.section-title {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.bg-dark .section-title::after {
+    background-color: var(--accent-color);
+}
+
+.bg-dark .section-title {
+    text-align: center;
+}
+
+.bg-dark .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Features Cards */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    color: var(--accent-color);
+}
+
+/* Custom List */
+.custom-list .list-group-item {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+}
+
+.custom-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Countdown Styling */
+.countdown-container {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-block span:first-child {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--dark-bg);
+    color: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.time-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Buttons Styling */
+.btn-danger, .btn-primary {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-danger {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-danger:hover {
+    background-color: #d13b00;
+    border-color: #d13b00;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 77, 0, 0.3);
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Game Screenshot */
+.game-screenshot {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-screenshot img {
+    transition: transform 0.5s ease;
+}
+
+.game-screenshot:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid var(--primary-color);
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 100px 0;
+    }
+    
+    .countdown {
+        flex-wrap: wrap;
+    }
+    
+    .time-block {
+        margin-bottom: 15px;
+    }
+    
+    .time-block span:first-child {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+    }
+}
+
+/* Trailer Section */
+.trailer-container {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.trailer-container:hover {
+    transform: translateY(-10px);
+}
+
+.trailer-video {
+    display: block;
+    border-radius: 8px;
+}
+
+#trailer .section-title {
+    position: relative;
+    color: var(--light-text);
+}
+
+#trailer .section-title::after {
+    background-color: var(--accent-color);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .trailer-container iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .trailer-container iframe {
+        height: 250px;
+    }
+}
+
+/* Support Section */
+#support .section-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.support-info {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.support-options .btn {
+    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.support-options .btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.support-benefits .card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.support-benefits .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.support-benefits .progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+}
+
+.support-benefits .progress-bar {
+    border-radius: 5px;
+}
+
+#support .custom-list .list-group-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+}
+
+#support .custom-list .list-group-item:last-child {
+    border-bottom: none;
+}
+
+/* Icon Styling */
+a i.fab, a i.fas, a i.far, a i.fa {
+    font-size: 1.5rem;  /* Increase icon size */
+    transition: transform 0.3s ease;
+}
+
+a i.fa-lg {
+    font-size: 1.8rem;  /* Make .fa-lg icons even larger */
+}
+
+.btn i {
+    font-size: 1.2rem;  /* Slightly larger icons in buttons */
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.btn-lg i {
+    font-size: 1.5rem;  /* Even larger icons in large buttons */
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.social-links a i {
+    font-size: 2rem;  /* Make social icons in footer larger */
+    margin: 0 5px;
+}
+
+.social-links a:hover i {
+    transform: translateY(-5px) scale(1.1);
+} 

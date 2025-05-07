@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:Legacy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section with Video Background -->
+    <section class="hero-section">
+        <div class="video-bg">
+            <video autoplay muted loop id="hero-video">
+                <source src="assets/videos/cslegacy-hero-trailer-compressed1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-12 mx-auto text-center">
+                    <img src="assets/images/cslegacy-logo.png" alt="CS:Legacy Logo" class="logo img-fluid mb-4">
+                    <!-- <h1 class="display-4 fw-bold text-white mb-4">CS:LEGACY</h1> -->
+                    <p class="lead text-white mb-5">A classic old-school shooter built from the ground up on Valve's Source Engine</p>
+                    <div class="call-to-arms">
+                        <h2 class="text-warning mb-4">JOIN THE FIGHT</h2>
+                        <a href="#support" class="btn btn-danger btn-lg me-3 mb-3">Support the Project</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg mb-3 btn-success">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CS:LEGACY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trailer">Trailer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#release">Release</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#support">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trailer Section -->
+    <section id="trailer" class="py-5 bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-4">
+                    <h2 class="section-title text-white">Watch the Trailer</h2>
+                    <p class="text-white mb-4">Experience the action-packed gameplay of CS:Legacy</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="trailer-container">
+                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/PspuiHlF5dM" title="CS:Legacy Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="trailer-video"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">What is CS:Legacy?</h2>
+                    <p class="lead">CS:Legacy is a classic old-school shooter, built from the ground up on Valve's public 2013 Source Engine SDK.</p>
+                    <p>Using 100% custom game code and game assets (textures, models, animations, UI, etc), and our own major rewrites to the renderer, shaders and various systems.</p>
+                    <div class="mt-4">
+                        <h3 class="h5 mb-3">Key Features:</h3>
+                        <ul class="list-group list-group-flush custom-list">
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check text-success me-2"></i> Customised graphics system</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check text-success me-2"></i> Physically Based Rendering</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check text-success me-2"></i> Completely rewritten reflection system</li>
+                            <li class="list-group-item bg-transparent"><i class="fas fa-check text-success me-2"></i> Custom UI and in-house source engine tools</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="game-screenshot">
+                        <img src="assets/images/poolday_screenshot1.jpg" alt="CS:Legacy Gameplay" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Game Features</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-gamepad fa-3x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Classic Gameplay</h3>
+                        <p>Experience the fast-paced, tactical gameplay reminiscent of classic shooters with modern enhancements.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-paint-brush fa-3x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Custom Graphics</h3>
+                        <p>Our advanced custom branch features physically based rendering and a rewritten reflection system.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-users fa-3x"></i>
+                        </div>
+                        <h3 class="h4 mb-3">Multiplayer Focus</h3>
+                        <p>Compete in team-based matches that reward skill, strategy and coordination.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Release Info Section -->
+    <section id="release" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Release Information</h2>
+                    <div class="release-info">
+                        <div class="release-item mb-4">
+                            <h3 class="h4 mb-3">When will CS:Legacy release?</h3>
+                            <p>CS:Legacy is planned to release on Steam in 2025 at an Early Access stage, and free for everyone to play.</p>
+                        </div>
+                        <div class="release-item">
+                            <h3 class="h4 mb-3">Which engine is CS:Legacy running on?</h3>
+                            <p>CSL is running on its own advanced custom branch of Valve's official Source Engine 2013 public SDK.</p>
+                            <p>Our branch features a customised graphics system, Physically Based Rendering, completely rewritten reflection system, custom UI, custom in-house source engine tools and many more features.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="countdown-container text-center">
+                        <h3 class="h4 mb-4">Countdown to Early Access</h3>
+                        <div id="countdown" class="countdown mb-4">
+                            <div class="time-block">
+                                <span id="days">00</span>
+                                <span class="time-label">Days</span>
+                            </div>
+                            <div class="time-block">
+                                <span id="hours">00</span>
+                                <span class="time-label">Hours</span>
+                            </div>
+                            <div class="time-block">
+                                <span id="minutes">00</span>
+                                <span class="time-label">Minutes</span>
+                            </div>
+                            <div class="time-block">
+                                <span id="seconds">00</span>
+                                <span class="time-label">Seconds</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-lg">Wishlist on Steam (coming soon)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="section-title">Support the Project</h2>
+                    <p class="lead">Help us bring CS:Legacy to life!</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="support-info pe-lg-5">
+                        <h3 class="h4 mb-4">How can I support the project?</h3>
+                        <p>You can back us up monthly on Patreon and get unique rewards in return! You can also make a one-time donation to our Kofi.</p>
+                        <p>Our goal is to work full-time on the project. The more support we get, the closer we get to that goal!</p>
+                        <h5>Additional rewards for Patreon supporters are listed in the official discord server. Be sure to join the server to get the latest updates and rewards!</h5>
+                        <div class="support-options mt-4">
+                            <a href="https://www.patreon.com/CSLegacy" target="_blank" class="btn btn-danger btn-lg me-3 mb-3">
+                                <i class="fa-brands fa-patreon"></i> Support on Patreon
+                            </a>
+                            <a href="https://ko-fi.com/CSLegacy" target="_blank" class="btn btn-primary btn-lg mb-3">
+                                <i class="fas fa-mug-hot"></i> One-time Donation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="support-benefits mt-4 mt-lg-0">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <h4 class="mb-4">Benefits of Supporting</h4>
+                                <ul class="list-group list-group-flush custom-list">
+                                    <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> Early access to development builds</li>
+                                    <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> Exclusive behind-the-scenes content</li>
+                                    <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> Direct influence on development decisions</li>
+                                    <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> Special recognition in the game credits</li>
+                                    <li class="list-group-item bg-transparent"><i class="fas fa-star text-warning me-2"></i> Exclusive in-game items and perks</li>
+                                </ul>
+                                <div class="progress mt-4">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                                </div>
+                                <!-- <small class="text-muted d-block mt-2">Progress towards full-time development</small> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA Section uncomment if you want to add a newsletter section-->
+    <!-- <section id="newsletter" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Stay Updated</h2>
+                    <p class="lead mb-4">Subscribe to our newsletter to receive the latest updates, beta access opportunities, and more!</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-danger btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="h5 mb-3">CS:Legacy</h3>
+                    <p>A classic old-school shooter built on Source Engine.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-links text-md-end">
+                        <a href="https://x.com/CSLegacyGame" class="text-white me-3"><i class="fab fa-x"></i></a>
+                        <a href="https://discord.gg/jtEAR2NZrd" class="text-white me-3"><i class="fab fa-discord"></i></a>
+                        <!-- <a href="#" class="text-white me-3"><i class="fab fa-steam"></i></a> -->
+                        <a href="https://www.patreon.com/CSLegacy" target="_blank" class="text-white me-3"><i class="fab fa-patreon"></i></a>
+                        <a href="https://ko-fi.com/CSLegacy" target="_blank" class="text-white"><i class="fas fa-mug-hot"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="small mb-0">&copy; 2023 CS:Legacy. Steam &copy; and Valve Corporation &copy; is a registered trademark of Valve Corporation. This website is not affiliated with Valve Corporation, Or any of its affiliates.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <!-- <a href="#" class="text-white-50 me-3 small">Privacy Policy</a>
+                    <a href="#" class="text-white-50 small">Terms of Service</a> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
