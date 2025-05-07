@@ -8,6 +8,7 @@ A responsive, modern website for CS:Legacy - a classic old-school shooter built 
 
 This project is a responsive Bootstrap 5-based website for the CS:Legacy game. The site serves as a landing page showcasing the game, its features, and providing ways for visitors to support the project.
 
+## A demo preview of the website can be found at: https://cslegacydemo.ladderstats.com
 ## Website Sections
 
 ### 1. Hero Section
